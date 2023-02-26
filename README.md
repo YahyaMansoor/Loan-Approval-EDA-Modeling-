@@ -2,8 +2,10 @@
 
 # Table of Contents
 1. [Problem Scoping](#Problem-Scoping)
-2. [Data Acquistion](#DataAcquistion)
-3. [Data Exlploration](#Data Exlploration)
+2. [Data Acquistion](#Data-Acquistion)
+3. [Data Exlploration](#Data-Exlploration)
+4. [Final Adjustments to Data](#Final-Adjustments-to-Data)
+5. [Modeling](#Modeling)
 
 ## Problem Scoping
 
