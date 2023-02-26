@@ -1,6 +1,6 @@
 # Loan-Approval-EDA-Modeling-
 
-<details><summary> **Problem Scoping** </summary>
+<details><summary>Problem Scoping</summary>
 <p>
 
 
@@ -37,7 +37,8 @@ What should I use ? Supervised Learning or Unsuperveised Learning?
 
 For loan approval prediction, we should use supervised learning, because we have a clear target variable (approval or denial) and labeled data, so supervised learning is the appropriate approach. You can use techniques such as Random Forest Classifier, Decision Trees, K- Nearest Neighbours Classifiers, Linear SVM (Support Vector Machines) Classifier, or Logistic Regression to build a predictive model that can accurately classify loan applications as approved or denied based on their input features.
 
-## Data Acquistion
+<details><summary>Data Acquistion</summary>
+<p>
 
 ``` python
 
