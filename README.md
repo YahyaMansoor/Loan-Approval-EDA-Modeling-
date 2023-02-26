@@ -1,7 +1,8 @@
 # Loan-Approval-EDA-Modeling-
 
+<details><summary>Problem Scoping</summary>
+<p>
 
-## Problem Scoping
 
 The loan approval prediction can be used by banks or other financial institutions to help them make more accurate and efficient loan approval decisions. It can also be used by individuals who are seeking loans to understand their chances of approval and what factors are considered in the decision-making process.
 
