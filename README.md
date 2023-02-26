@@ -1,8 +1,6 @@
 # Loan-Approval-EDA-Modeling-
 
-<details><summary>Problem Scoping</summary>
-
-
+## Problem Scoping
 
 The loan approval prediction can be used by banks or other financial institutions to help them make more accurate and efficient loan approval decisions. It can also be used by individuals who are seeking loans to understand their chances of approval and what factors are considered in the decision-making process.
 
@@ -37,8 +35,7 @@ What should I use ? Supervised Learning or Unsuperveised Learning?
 
 For loan approval prediction, we should use supervised learning, because we have a clear target variable (approval or denial) and labeled data, so supervised learning is the appropriate approach. You can use techniques such as Random Forest Classifier, Decision Trees, K- Nearest Neighbours Classifiers, Linear SVM (Support Vector Machines) Classifier, or Logistic Regression to build a predictive model that can accurately classify loan applications as approved or denied based on their input features.
 
-<details><summary>Data Acquistion</summary>
-<p>
+## Data Acquistion
 
 ``` python
 
