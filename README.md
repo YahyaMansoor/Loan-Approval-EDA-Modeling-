@@ -70,6 +70,7 @@ Loan Status: Yes/No (This is the final decision made by the lender)
 ## Data Exlploration
 Over here we are trying to find the missing data from our dataset.
 Missing data could be for many reasons like :
+
 1.Test design
 
 2.failure in observation
@@ -77,11 +78,13 @@ Missing data could be for many reasons like :
 3.failure to record observation
 
 Correcting Missing data is very crucial because:
+
 1.It can affect the decisions of the ML models, which can reduce the accuracy of the model.
 
 2.It makes the model baised to the one class,where all the datapoints are present.This also leads to inaccuracy which cannot be recorded.
 
 It is always better to check the number of missing data:
+
 1.If the missing data is more in number, then the possible solution is to impute the missing places by taking the mean of the row/column.
 
 2.If the missing data is less in number , then the missing row can be deleted.
