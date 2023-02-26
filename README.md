@@ -1,5 +1,10 @@
 # Loan-Approval-EDA-Modeling-
 
+# Table of Contents
+1. [Problem Scoping](#Problem Scoping)
+2. [Data Acquistion](#Data Acquistion)
+3. [Data Exlploration](#Data Exlploration)
+
 ## Problem Scoping
 
 The loan approval prediction can be used by banks or other financial institutions to help them make more accurate and efficient loan approval decisions. It can also be used by individuals who are seeking loans to understand their chances of approval and what factors are considered in the decision-making process.
@@ -67,7 +72,9 @@ Loan Amount term: number (Helps the lender to calculate the the total interest w
 Property Area: Uraban/Rural/Semi-Urban (Helps the lender understand the standard of living of the borrower.)
 
 Loan Status: Yes/No (This is the final decision made by the lender)
+
 ## Data Exlploration
+
 Over here we are trying to find the missing data from our dataset.
 Missing data could be for many reasons like :
 
