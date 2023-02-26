@@ -1,6 +1,6 @@
 # Loan-Approval-EDA-Modeling-
 
-<details><summary>Problem Scoping</summary>
+<details><summary> **Problem Scoping** </summary>
 <p>
 
 
