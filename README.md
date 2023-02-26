@@ -9,38 +9,7 @@
 
 ## Problem Scoping
 
-The loan approval prediction can be used by banks or other financial institutions to help them make more accurate and efficient loan approval decisions. It can also be used by individuals who are seeking loans to understand their chances of approval and what factors are considered in the decision-making process.
-
-The loan approval prediction it's important because it can improve the loan approval process by making it more efficient, reducing the time and resources required for manual underwriting, and providing more accurate and consistent decisions. It can also reduce bias and discrimination by using objective data-driven models to make decisions.
-
-The social impact of The loan approval prediction that can help increase financial inclusion by enabling more people to access loans and credit, particularly those who may have been overlooked or discriminated against in the past. It can also help reduce economic inequality by providing fairer access to credit.
-
-There are several ethical considerations to keep in mind when developing a loan approval prediction. One is the potential for bias and discrimination in the data and models used, which could lead to unfair treatment of certain groups of people. It's important to ensure that the data used is representative of the population and that the models are designed to minimize bias. Another consideration is transparency and accountability - individuals should be able to understand why they were approved or denied for a loan, and there should be a mechanism for challenging decisions if they are deemed unfair or discriminatory. Finally, privacy is also a concern, as loan application data may contain sensitive personal information that needs to be protected.
-
-
-How to convert loan approval prediction problem statement to AI problem statement ? 
-To convert the loan approval prediction problem statement to an AI problem statement, we need to define the task as a machine learning problem that uses historical data to predict whether a new loan application should be approved or denied.
-
-Here are some steps you can follow to convert the problem statement:
-
-1. Collect historical loan data: The first step is to collect data on past loan applications, including information on the applicant's credit history, income, debt-to-income ratio, loan amount, loan purpose, and whether the loan was approved or denied.
-
-2. Define the problem statement: The loan approval prediction problem statement can be defined as a binary classification task, where the goal is to predict whether a new loan application will be approved or denied based on the input features.
-
-3. Feature engineering: Next, we need to preprocess and engineer the input features to prepare them for machine learning algorithms. This may involve data cleaning, feature scaling, encoding categorical variables, and handling missing data.
-
-4. Select a machine learning algorithm: We can then select an appropriate machine learning algorithm that is suitable for the loan approval prediction problem, such as logistic regression, decision trees, or neural networks.
-
-5. Train the model: We can use the historical loan data to train the machine learning model, using techniques such as cross-validation to evaluate its performance.
-
-6. Evaluate the model: Once the model is trained, we can evaluate its performance on a test set of loan applications that were not used for training. This can involve metrics such as accuracy, precision, recall, and F1 score.
-
-7. Deploy the model: Finally, we can deploy the trained model in a production environment, where it can be used to make predictions on new loan applications in real-time. We may also need to monitor the model's performance over time and update it as new data becomes available.
-
-
-What should I use ? Supervised Learning or Unsuperveised Learning?
-
-For loan approval prediction, we should use supervised learning, because we have a clear target variable (approval or denial) and labeled data, so supervised learning is the appropriate approach. You can use techniques such as Random Forest Classifier, Decision Trees, K- Nearest Neighbours Classifiers, Linear SVM (Support Vector Machines) Classifier, or Logistic Regression to build a predictive model that can accurately classify loan applications as approved or denied based on their input features.
+The loan approval prediction is important for improving the loan approval process and increasing financial inclusion. It can be converted into an AI problem statement using supervised learning techniques such as Random Forest Classifier, Decision Trees, K- Nearest Neighbours Classifiers, Linear SVM (Support Vector Machines) Classifier, or Logistic Regression. Historical loan data is collected and preprocessed, and a machine learning algorithm is selected and trained. The model's performance is evaluated and deployed for real-time predictions. Supervised learning is the appropriate approach because we have a clear target variable and labeled data.
 
 ## Data Acquistion
 
@@ -78,25 +47,9 @@ Loan Status: Yes/No (This is the final decision made by the lender)
 ## Data Exlploration
 
 Over here we are trying to find the missing data from our dataset.
-Missing data could be for many reasons like :
-
-1.Test design
-
-2.failure in observation
-
-3.failure to record observation
-
-Correcting Missing data is very crucial because:
-
-1.It can affect the decisions of the ML models, which can reduce the accuracy of the model.
-
-2.It makes the model baised to the one class,where all the datapoints are present.This also leads to inaccuracy which cannot be recorded.
-
-It is always better to check the number of missing data:
-
-1.If the missing data is more in number, then the possible solution is to impute the missing places by taking the mean of the row/column.
-
-2.If the missing data is less in number , then the missing row can be deleted.
+- Missing data can occur due to various reasons and correcting it is crucial for accurate machine learning models. 
+- Missing data can lead to biased results and reduced accuracy. 
+- It's important to check the number of missing data and take appropriate actions such as imputing the missing values or deleting the missing rows/columns depending on the number of missing data.
 
 ``` python
 #Preview data information
@@ -105,15 +58,8 @@ data.info()
 data.isnull().sum()
 ```
 
-After figuring out the missing values of all the feature/columns we can now impute or detele the missing values.
-Criteria for imputing data:
+After identifying the missing values in the dataset, we can either impute or delete them. If the missing feature is categorical, we can impute it with the most occurring category. On the other hand, if the missing feature is numerical, we can impute it with the mean or median of the entire feature. However, caution should be taken before deleting missing data, especially when the number of missing rows is less. Deleting rows may solve the missing data problem, but it also leads to the loss of data from other features in that row.
 
-1. If the feature is categorical in nature (e.g Temperature can be hot,humid,cold) we can impute it with the most occuring category.
-
-2. If the feautue is numerical in nature (e.g Height of the person) we can impute the missing row by taking the mean or median of the enitre feature.
-
-Caution before deleting the missing data/rows:
-We should only delete the missing data when the number of missing rows are less in number. Deleting rows can solve missing data problem, but it is also loss of data when it comes to other features in that row.
 
 ## Final Adjustments to Data
 
