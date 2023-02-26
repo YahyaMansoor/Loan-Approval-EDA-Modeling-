@@ -65,13 +65,13 @@ After identifying the missing values in the dataset, we can either impute or del
 
 Based on my assessment of the missing values in the dataset, I'll make the following changes to the data:
 
-If "Gender" is missing for a given row, I'll impute with Male (most common answer).
-If "Married" is missing for a given row, I'll impute with yes (most common answer).
-If "Dependents" is missing for a given row, I'll impute with 0 (most common answer).
-If "Self_Employed" is missing for a given row, I'll impute with no (most common answer).
-If "LoanAmount" is missing for a given row, I'll impute with mean of data.
-If "Loan_Amount_Term" is missing for a given row, I'll impute with 360 (most common answer).
-If "Credit_History" is missing for a given row, I'll impute with 1.0 (most common answer).
+- If "Gender" is missing for a given row, I'll impute with Male (most common answer).
+- If "Married" is missing for a given row, I'll impute with yes (most common answer).
+- If "Dependents" is missing for a given row, I'll impute with 0 (most common answer).
+- If "Self_Employed" is missing for a given row, I'll impute with no (most common answer).
+- If "LoanAmount" is missing for a given row, I'll impute with mean of data.
+- If "Loan_Amount_Term" is missing for a given row, I'll impute with 360 (most common answer).
+- If "Credit_History" is missing for a given row, I'll impute with 1.0 (most common answer).
 
 ``` python
 train_data = data.copy()
