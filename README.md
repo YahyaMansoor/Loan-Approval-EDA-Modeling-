@@ -1,8 +1,8 @@
 # Loan-Approval-EDA-Modeling-
 
 # Table of Contents
-1. [Problem Scoping](#Problem Scoping)
-2. [Data Acquistion](#Data Acquistion)
+1. [Problem Scoping](#Problem-Scoping)
+2. [Data Acquistion](#DataAcquistion)
 3. [Data Exlploration](#Data Exlploration)
 
 ## Problem Scoping
