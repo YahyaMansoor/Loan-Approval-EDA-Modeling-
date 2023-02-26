@@ -7,7 +7,7 @@
 
 ## Data Acquistion
 
-<font color="red">Hi Yahya</font>
+<font color="r">Hi Yahya</font>
 
 
 ## Data Exlploration
