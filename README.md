@@ -165,7 +165,7 @@ print(rf)
 
 ``` python
 # Build the Random Forest Classifier prediction model.
-rf_clf = RandomForestClassifier(n_jobs = -1, n_estimators = 100)
+rf_clf = RandomForestClassifier(bootstrap= False, max_features= 'sqrt', min_samples_leaf= 4, n_estimators= 300)
 rf_clf.fit(x_train,y_train)
 #Evaluation of Random Forest Classifier 
 rf_y_pred = rf_clf.predict(x_test)
@@ -191,7 +191,7 @@ print(dcTree)
 
 ``` python
 # Build the Decision Tree Classifier prediction model.
-clf = DecisionTreeClassifier(random_state=0)
+clf = DecisionTreeClassifier(criterion = 'gini', max_depth = 2, min_samples_leaf = 5)
 clf.fit(x_train,y_train)
 # Evaluation of Decision Tree Classifier
 y_pred = clf.predict(x_test)
@@ -215,7 +215,7 @@ print(knn)
 
 ``` python
 # Build the K- Nearest Neighbours Classifier prediction model.
-knn_clf = KNeighborsClassifier()
+knn_clf = KNeighborsClassifier(algorithm= 'auto', n_neighbors= 5)
 knn_clf.fit(x_train,y_train)
 # Evaluation of K- Nearest Neighbours Classifier
 knn_y_pred = knn_clf.predict(x_test)
@@ -225,20 +225,8 @@ print("*"*100)
 print("Classification report")
 print(classification_report(y_test, knn_y_pred))
 ``` 
-4. Linear SVM Classifier
-``` python
-# Build the Linear SVM Classifier prediction model.
-svm_clf  =  svm.LinearSVC(max_iter=5000)
-svm_clf.fit(x_train,y_train)
-# Evaluation of Linear SVM Classifier
-svm_y_pred = svm_clf.predict(x_test)
-print("Confusion Matrix")
-print(confusion_matrix(y_test, svm_y_pred))
-print("*"*100)
-print("Classification report")
-print(classification_report(y_test, svm_y_pred))
-``` 
-5. Logistic Regression
+
+4. Logistic Regression
 
 ``` python
 # using GridSearchCV to find the best parameters.
@@ -253,7 +241,7 @@ print(log_reg)
 
 ``` python
 # Build the Logistic Regression model.
-log_reg = LogisticRegression(n_jobs = -1)
+log_reg = LogisticRegression(C = 0.1, penalty = 'l1', solver = 'liblinear')
 log_reg.fit(x_train, y_train)
 log_reg.score(x_train, y_train)
 # Evaluation of Logistic Regression model
